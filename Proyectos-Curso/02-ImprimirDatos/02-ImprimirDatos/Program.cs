@@ -1,0 +1,20 @@
+﻿using System;
+
+namespace _02_ImprimirDatos
+{
+    class Program
+    {
+        protected static void Main(string[] args)
+        {
+            string nameUser = "German Pinilla"; // Definimos una variable para el nombre del usuario
+            string dataMessage = message(nameUser); // Pasamos como argumento de la funcion 'message' el nombre del usuario
+            Console.WriteLine(dataMessage); // Imprimimos la variable 'dataMessage' que contiene el mensaje devuelto por la funcion 'message'
+        }
+
+        // Definimos una funcion que nos retorna un mensaje para un usuario
+        private static string message(string nameUser)
+        {
+            return "Hello " + nameUser + ", Welcome to my C# App!"; // Retornamos el mensaje modificado con el nombre del usuario que se paso como argumento
+        }
+    }
+}
