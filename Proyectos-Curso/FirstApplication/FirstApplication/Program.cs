@@ -7,7 +7,7 @@ namespace FirstApplication
         protected static void Main(string[] args)
         {
             string nameUser = "German Pinilla";
-            bool student = false;
+            bool student = true;
             System.Int32 edad = 33; // Forma de definir un entero en .NET Framework
             Console.WriteLine(Saludo(nameUser, student, edad));
         }

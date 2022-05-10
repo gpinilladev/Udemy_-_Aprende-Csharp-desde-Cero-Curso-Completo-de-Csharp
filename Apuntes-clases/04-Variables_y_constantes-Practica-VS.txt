@@ -1,56 +1,84 @@
-03 - VARIABLES Y CONSTANTES
+using System;
 
-Las variables son el elemento fundamental de todo lenguaje de programacion, a partir de las variables y de 
-su combinacion con los operadores y las estructuras de control, se construye la logica de cualquier sistema.
+namespace _04_Variables_y_Constantes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 🤓 Para crear variables o propiedades de la clase debemos tener en cuenta la siguiete sintaxis
+            // 1 - Debemos definir el tipo de variable que vamos a crear, en este caso los tipos mas usados son:
+            //     - int
+            //     - string
+            //     - bool
+            //     - float
+            //     - double
+            //     - decimal
+            //     - object
+            // 2 - Una vez identificamos el tipo de variable, definimos su nombre en formato camel case
+            //     string firstName
+            // 3 - Una vez damos un nombre acorde al tipo e variable y logicmante su valor. Asignamos un valor logico a dicha variable:
+            //     string firstName = "German";
+            // 4 - Finalizamos la sentencia con punto y coma (;). Muy importante!
 
-Entonces una variable se puede entender escencialmente como un contenedor de informacion. Dentro de ese contenedor 
-de informacion podemos almacenar informacion, obtener la informacion almacenada y tambien modificarla.
+            string lastName; // Definicion de una variable de tipo string
+            string firstName = "John"; // Definicion de una variable de tipo string y asignacion en la misma linea
+            lastName = "Wick"; // Asignacion de un valor a la variable de tipo string lastName;
+            
+            Console.WriteLine(firstName); // Impresion de la variable firstName
+            Console.WriteLine(lastName); // Impresion de la variable lastName
 
-Pero una definicion mas tecnica seria que una variable es en realidad un espacio de memoria con un nombre especifico 
-que alamacena el valor de un tipo de dato particular, luego ese espacio en memoria puede ser acceduido por el 
-sistema atraves de su nombre.
+            // Concatenacion de variables
+            string fullName = firstName + " " + lastName;
+            Console.WriteLine(fullName); // Impresion de la variable que contiene la concatenacion de las vriables string firstName y lastName
 
-En C# una variable se define de la siguienete manera y de forma basica:
-[data type] [identifier];
+            string firstNameUser = "German"; // Variable de tipo string que almacena el nombre del usuario
+            string lastNameUser = "Pinilla"; // Variable de tipo string que almacena el apellido del usuario
+            string emailUser = "gpinilladev@gmail.com"; // Variable de tipo string que almacena el email del usuario
+            int ageUser = 33; // Variable de tipo integer que almacena la edad del usuario
+            double heightUser = 1.68; // Variable de tipo string que almacena la estatura del usuario
+            bool isStudent = true; // Variable de tipo boolean que almacena el valor bit de si es estudiante o no lo es (true o false)
 
-Ejemplo:
-string customer;
 
-Existe la posibilidad de definir las variables con un valor inicial:
-[data type] [identifier] = [value];
-string customer = "John Wick";
+            string dataUserMessage = dataUser(firstNameUser, lastNameUser, emailUser, ageUser, heightUser, isStudent);
+            Console.WriteLine(dataUserMessage);
 
-Algunos tipos de variables son:
-    C#	    Tipo en System	Características	                           Símbolo
+            // Suma de valores numericos enteros
+            int number1 = 10;
+            int number2 = 20;
+            Console.WriteLine(number1 + number2);
 
-    sbyte	System.Sbyte	entero, 1 byte con signo
-    byte	System.Byte	    entero, 1 byte sin signo
-    short	System.Short	entero, 2 bytes con signo
-    ushort	System.UShort	entero, 2 bytes sin signo
-    int	    System.Int32	entero, 4 bytes con signo
-    uint	System.UInt32	entero, 4 bytes sin signo	                U
-    long	System.Int64	entero, 8 bytes con signo	                L
-    ulong	System.ULong64	entero, 8 bytes sin signo	                UL
-    float	System.Single	real, IEEE 754, 32 bits	F
-    double	System.Double	real, IEEE 754, 64 bits	D
-    decimal	System.Decimal	real, 128 bits (28 dígitos significativos)	M
-    bool	System.Boolean	(Verdad/Falso) 1 byte
-    char	System.Char	    Carácter Unicode, 2 bytes	                ´ ´
-    string	System.String	Cadenas de caracteres Unicode	            " "
-    object	System.Object	Cualquier objeto (ningún tipo concreto)
+            // Reasignacion de valores a variables
+            number1 = 30;
+            number2 = 40;
+            Console.WriteLine(number1 + number2);
 
-Reglas para la definicion de variables:
+            // Creacion de variables del mismo tipo en una sola sentencia
+            int a, b = 10, c, d = b, e = 5;
 
-* El nombre de cada varaible debe ser unico.
-* Solo pueden contener letras, numeros y guines bajos.
-* Deben comenzar con una letras
-* Son case-sensitive, es decir que 2 variables name y Name son totalmente diferentes.
-* No pueden contener palabras reservadas.
-* Por convencion debe tener la notacion camelCase.
 
-Si con las variables denominamos valores que se pueden cambiar, con las constantes es lo opuesto.
-Cuando se declara una cosntante su valor debe ser definido inmediatamente y despues de eso no se puede 
-realizar ningun cambio al valor de la variable.
+            double dataPI = PI();
+            Console.WriteLine("Data value PI: " + dataPI);
 
-En general, las constantes se utilizan cuando necesitamos tener un elemento cuyo valor no cambie nunca 
-dentro del flujo del sistema, ni siquiera por accidente.
+        }
+
+        public static string dataUser(
+            string firstNameUser,
+            string lastNameUser,
+            string emailUser,
+            int ageUser,
+            double heightUser,
+            bool isStudent)
+        {
+            string isStudentFlag = (isStudent) ? "Si" : "No";
+            return "Data User\n\nName User: " + firstNameUser + " " + lastNameUser + "\nEmail User: " + emailUser + "\nAge User: " + ageUser + "\nHeight User: " + heightUser + "\n¿Es estudiante?: " + isStudentFlag;
+        }
+
+        public static double PI()
+        {
+            const double dataPI = Math.PI;
+            return dataPI;
+        }
+
+    }
+}
