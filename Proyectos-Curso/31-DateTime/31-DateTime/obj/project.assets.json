@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/germanpinilla/Documents/Udemy/Cursos/Aprende_CSharp_desde_Cero_-_Curso_Completo_de_CSharp/Proyectos-Curso/29-String-Builder/29-String-Builder/29-String-Builder.csproj",
-      "projectName": "29-String-Builder",
-      "projectPath": "/Users/germanpinilla/Documents/Udemy/Cursos/Aprende_CSharp_desde_Cero_-_Curso_Completo_de_CSharp/Proyectos-Curso/29-String-Builder/29-String-Builder/29-String-Builder.csproj",
+      "projectUniqueName": "/Users/germanpinilla/Documents/Udemy/Cursos/Aprende_CSharp_desde_Cero_-_Curso_Completo_de_CSharp/Proyectos-Curso/31-DateTime/31-DateTime/31-DateTime.csproj",
+      "projectName": "31-DateTime",
+      "projectPath": "/Users/germanpinilla/Documents/Udemy/Cursos/Aprende_CSharp_desde_Cero_-_Curso_Completo_de_CSharp/Proyectos-Curso/31-DateTime/31-DateTime/31-DateTime.csproj",
       "packagesPath": "/Users/germanpinilla/.nuget/packages/",
-      "outputPath": "/Users/germanpinilla/Documents/Udemy/Cursos/Aprende_CSharp_desde_Cero_-_Curso_Completo_de_CSharp/Proyectos-Curso/29-String-Builder/29-String-Builder/obj/",
+      "outputPath": "/Users/germanpinilla/Documents/Udemy/Cursos/Aprende_CSharp_desde_Cero_-_Curso_Completo_de_CSharp/Proyectos-Curso/31-DateTime/31-DateTime/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/germanpinilla/.config/NuGet/NuGet.Config"
