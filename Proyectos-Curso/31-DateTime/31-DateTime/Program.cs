@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace _31_DateTime
 {
@@ -86,6 +87,17 @@ namespace _31_DateTime
             Console.WriteLine($"Mi fecha de nacimiento + 10 dias: {myBirthDate.AddDays(10)}");
             Console.WriteLine($"Mi fecha de nacimiento + 3 meses: {myBirthDate.AddMonths(3)}");
             Console.WriteLine($"Mi fecha de nacimiento + 5 años: {myBirthDate.AddYears(5)}");
+
+            Console.WriteLine($"Mi fecha de nacimiento (año): {myBirthDate.Year}");
+            Console.WriteLine($"Mi fecha de nacimiento (mes): {myBirthDate.Month}");
+            Console.WriteLine($"Mi fecha de nacimiento (dia): {myBirthDate.Day}");
+
+            Console.WriteLine($"Mi fecha de nacimiento (dia de la semana): {myBirthDate.DayOfWeek}");
+            Console.WriteLine($"Mi fecha de nacimiento (dia del año): {myBirthDate.DayOfYear}");
+
+            Console.WriteLine($"Mi fecha de nacimiento (Full date): {myBirthDate.ToString("F")}");
+            Console.WriteLine($"Mi fecha de nacimiento (es español): {myBirthDate.ToString("F", new CultureInfo("es-ES"))}");
+            
 
         }
     }
