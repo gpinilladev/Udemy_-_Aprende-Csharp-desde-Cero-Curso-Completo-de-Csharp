@@ -1,8 +1,8 @@
-﻿<Properties StartupConfiguration="{F792CBBD-0E77-4AD1-A07F-68646D9077BF}|Default">
-  <MonoDevelop.Ide.ItemProperties.65-Listas PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="65-Listas/Program.cs">
+﻿<Properties StartupConfiguration="{EF1D9748-893A-4B9D-B93B-CD3C848C17CA}|Default">
+  <MonoDevelop.Ide.ItemProperties.68-Diccionarios PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="68-Diccionarios/Program.cs">
     <Files>
-      <File FileName="65-Listas/Program.cs" Line="154" Column="16" />
+      <File FileName="68-Diccionarios/Program.cs" Line="126" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
